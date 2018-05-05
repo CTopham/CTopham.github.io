@@ -140,6 +140,12 @@ p {
     font-size: 25px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
   
 </style>
 
@@ -150,11 +156,11 @@ p {
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++NAV BAR++++++++++++++++++++++++++++++++++++++-->
 <header>
-    <h1 style="color:DodgerBlue;">Latitude vs the World</h1>
+  <h1 style="color:DodgerBlue;text-shadow: 1px 1px grey;">Latitude vs the World</h1>
  </header>
 <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">Data</a>
+  <a target="_blank" href="https://ctopham.github.io/Landing_Page.html">Home</a>
+  <a target="_blank" href="https://ctopham.github.io/HTML_Project_Data/data_page.html">Data</a>
   <a href="#news">Comparison</a>
   <div class="dropdown">
     <button class="dropbtn">Graphs 
@@ -192,13 +198,11 @@ p {
     </nav>
     
     <article>
-      <h1 align="center">Overview</h1>
-      <p style="padding: 0 80px">The purpose of this project was to analyze how weather changes as you get closer to the equator.  In order to complete this analysis an API was utilize to collect current state weather metrics. A loop iterated though the data and collected weather data on 500 random cities then brought into a data frame. After this data was inserted into tables and cleaned, a thorough assessment could be achieved. 
-        
-        </p>
-       <p style="padding: 0 80px">
-        The weather data focused on 4 metrics and their relationship with the equator. Using the data the following were plotted; Temperature vs :Latitude, Humidity vs Latitude, Cloudiness vs Latitude and Humidity vs latitude. 
-        </p>
+      <h1 align="center">Temperature vs Latitude</h1>
+      <p style="padding: 0 80px">This graph visualizes temperature and latitude. As you can see the data points are shaped in a horse shoe formation. The reason the formation took shape is due to the temperature increasing in locations that are closure to the equator. On the left side of the graph the points do not dip as low as the right, that is due to the earths rotation and locations that are negative in latitude are currently in their summer months. </p>
+      
+<img src="https://github.com/CTopham/CTopham.github.io/blob/master/HTML_Project_Data/output_9_0.png?raw=true" alt="Temp" style="width:500px;height:400px;"class="center">
+       
       
     </article>
     <br></br>
@@ -212,8 +216,6 @@ p {
     
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 </body>
